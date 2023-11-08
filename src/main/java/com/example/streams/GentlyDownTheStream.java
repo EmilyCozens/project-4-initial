@@ -100,6 +100,7 @@ public class GentlyDownTheStream {
         return integerValues.stream()
                 .mapToInt(Integer::intValue)
                 .average()
+
                 //Return 0.0 if the stream is empty to avoid potential NaN(Not-a-Number) result.
                 .orElse(0.0 );
     }
